@@ -7,7 +7,7 @@ class Home extends Component {
   state = { characters: [] }
 
   componentDidMount() {
-    axios.get('https://api.got.show/api/plod')
+    axios.get('https://api.got.show/api/characters/')
     .then( ({data: characters}) => this.setState({characters}) )
   }
 
